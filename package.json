@@ -3,7 +3,6 @@
   "version": "4.0.0",
   "description": "on-change that works with both commonjs and ecmascript",
   "main": "index.js",
-  "module": "index.esm.js",
   "keywords": [
     "on-change",
     "proxy",
@@ -21,7 +20,8 @@
     "type": "git",
     "url": "git@github.com:alfateam/on-change.git"
   },
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "on-change": "^4.0.0",
     "@rollup/plugin-commonjs": "^19.0.0",
