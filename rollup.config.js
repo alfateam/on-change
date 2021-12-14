@@ -2,9 +2,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import nodeResolve from '@rollup/plugin-node-resolve';
 
 export default {
-	input: 'index.esm.js',
+	input: 'index.mjs',
 	output: {
-		file: 'index.js',
+		file: 'index.cjs',
 		format: 'commonjs',
 		exports: 'auto'
 	},
