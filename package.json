@@ -1,14 +1,13 @@
 {
-  "name": "@alfateam/on-change",
-  "version": "4.0.0",
+  "name": "@lroal/on-change",
+  "version": "4.0.1",
   "description": "on-change that works with both commonjs and ecmascript",
-  "type": "module",
-  "main": "./index.cjs",
+  "main": "./index-esm.js",
   "exports": {
-    "import": "./index.mjs",
-    "require": "./index.cjs"
+    "require": "./index-cjs.js",
+    "import": "./index-esm.js",
+    "default": "./index-esm.js"
   },
-  "module": "index.mjs",
   "keywords": [
     "on-change",
     "proxy",
@@ -21,10 +20,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/alfateam/on-change.git"
+    "url": "git+ssh://git@github.com/lroal/on-change.git"    
   },
   "dependencies": {
-    "on-change": "^4.0.0"
+    "on-change": "^4.0.1"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^19.0.0",
@@ -32,7 +31,7 @@
     "rollup": "^2.52.7"
   },
   "bugs": {
-    "url": "https://github.com/alfateam/on-change/issues"
+    "url": "https://github.com/lroal/on-change/issues"
   },
-  "homepage": "https://github.com/alfateam/on-change#readme"
+  "homepage": "https://github.com/lroal/on-change#readme"
 }

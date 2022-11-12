@@ -493,7 +493,7 @@ class CloneObject {
 
 		if (isObject(value)) {
 			clone = {...value};
-		} else if (isArray(value)) {
+		} else if (isArray(value) || ArrayBuffer.isView(value)) {
 			clone = [...value];
 		} else if (value instanceof Date) {
 			clone = new Date(value);
@@ -988,7 +988,7 @@ const onChange = (object, onChange, options = {}) => {
 	onChange = onChange.bind(proxy);
 
 	if (hasOnValidate) {
-		options.onValidate = options.onValidate.bind(proxy); // eslint-disable-line unicorn/prefer-prototype-methods
+		options.onValidate = options.onValidate.bind(proxy);
 	}
 
 	return proxy;
