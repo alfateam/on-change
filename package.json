@@ -1,6 +1,6 @@
 {
   "name": "@lroal/on-change",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "on-change that works with both commonjs and ecmascript",
   "main": "./cjs/index.js",
   "module": "./mjs/index.js",
