@@ -2,11 +2,11 @@
   "name": "@lroal/on-change",
   "version": "4.0.1",
   "description": "on-change that works with both commonjs and ecmascript",
-  "main": "./index-esm.js",
+  "main": "./cjs/index.js",
+  "module": "./mjs/index.js",
   "exports": {
-    "require": "./index-cjs.js",
-    "import": "./index-esm.js",
-    "default": "./index-esm.js"
+    "require": "./cjs/index.js",
+    "import": "./mjs/index.js"
   },
   "keywords": [
     "on-change",
